@@ -6,6 +6,4 @@ COPY ./requirements.txt /application/requirements.txt
 
 RUN pip install -r requirements.txt
 
-COPY app.py /application/app.py
-
 CMD flask run --host=0.0.0.0 --port=5050
